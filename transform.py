@@ -26,5 +26,5 @@ class Transform:
         # reset the index
         self.normal_values.reset_index()
 
-    def clean_report(self):
+    def get_clean_report(self):
         return self.normal_values
