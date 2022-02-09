@@ -13,4 +13,15 @@ report1.create_report("calls", "2021-07-24T00:00:00",
 
 values = report1.get_report()
 
-print(values)
+#change dict values to dataframe with initialization
+transf = Transform(values)
+
+#clean the report
+transf.chg_data_call_report()
+
+#get a copy of the data with values cleaned
+report = transf.get_clean_report()
+
+#write the data to a csv file
+report.to_csv('test.csv')
+
