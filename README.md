@@ -13,6 +13,5 @@ console and the job_id is stored.
  
  ---future feature and changes coming
  1) Error handling is yet to be added
- 2) Another class called normal.py will be created using pandas, to grabe the data values to clean the data and
-    and write the data to a spreadsheet
+ 2) Transform.py will be getting other report types to clean and will also be used to create reports. 
  3) A logging feature will be added that will write to a seperate file whenever an exception/error takes place. 
