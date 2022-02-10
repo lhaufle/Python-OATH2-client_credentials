@@ -27,7 +27,7 @@ class TD_API:
         # create headers and payload for the post request.
         payload = {
             'grant_type': 'client_credentials',
-            "scope": "reports:read reports:write",
+            "scope": "reports:read reports:write data-reports:write data-reports:read",
             'Content-Type': 'application/x-www-form-urlencoded'
         }
         headers = {
